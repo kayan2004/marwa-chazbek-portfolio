@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+
+@font-face {
+      font-family: 'francker'; /* Choose a descriptive name */
+      src: url('./fonts/francker-w10-2.ttf') format('truetype'); /* Adjust path and filename */
+      font-weight: normal;
+      font-style: normal;
+}
+
+@font-face {
+      font-family: 'helvetica'; /* Choose a descriptive name */
+      src: url('./fonts/Helvetica.ttf') format('truetype'); /* Adjust path and filename */
+      font-weight: normal;
+      font-style: normal;
+}
+
+@theme {
+  --color-primary: #f262b0;
+  --color-secondary: rgb(241, 215, 243);
+
+  --font-display: 'helvetica'
+}
+
+@theme {  --breakpoint-xs: 30rem;  --breakpoint-2xl: 100rem;  --breakpoint-3xl: 120rem;}
+
+:root {
+  font-family: 'francker';
+  line-height: 1.5;
+
+  
+
+  color-scheme: light dark;
+  color: rgb(241, 215, 243);
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url(assets/background-image.png) center/cover no-repeat;
+  filter: brightness(0.2); /* 0.5 = darker, 1 = normal */
+  pointer-events: none;
+}
+
+p {
+  font-family: 'helvetica';
+}
+
+section > h2 {
+  margin-bottom: 10px;
+
+}
+
+

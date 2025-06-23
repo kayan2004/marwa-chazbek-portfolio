@@ -1,0 +1,22 @@
+/* #project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+#project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-image: url('./assets/background-image.png');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3); 
+    transition: filter 0.3s ease; 
+    pointer-events: none
+}
+
+#project-card::before:hover {
+    cursor:pointer;
+   filter: brightness(0.8)
+} */
