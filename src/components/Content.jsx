@@ -1,40 +1,64 @@
 import React from "react";
 import CategoryCard from "./CategoryCard";
-import bgimage from "../assets/background-image.png";
-const Content = () => {
+const Content = ({ aboutMe }) => {
   const projectSections = [
-    "BFA project",
-    "branding",
-    "editorial",
-    "illustration",
-    "packaging",
-    "photography",
-    "animation",
-    "3D modeling",
+    {
+      name: "BFA project",
+      thumbnail: "/assets/projects/bfa project/Slide31.PNG",
+    },
+    {
+      name: "Branding",
+      thumbnail: "/assets/projects/branding/beatbox/beatbox-06.jpg",
+    },
+    {
+      name: "Editorial",
+      thumbnail:
+        "/public/assets/projects/editorial/bilingual magazine/01 Free Open A4 Magazine Mockup On Concr2ete.png",
+    },
+    {
+      name: "Illustration",
+      thumbnail: "/public/assets/projects/illustration/self portrait/3.png",
+    },
+    {
+      name: "Packaging",
+      thumbnail: "/public/assets/projects/packaging/Image0005.png",
+    },
+    {
+      name: "Photography",
+      thumbnail:
+        "/public/assets/projects/photography/street photography/jbeil 28.jpg",
+    },
+    {
+      name: "Animation",
+      thumbnail:
+        "/public/assets/projects/animation/marwa_chazbek_ball_animation.mp4",
+    },
+    {
+      name: "3D modeling",
+      thumbnail: "/public/assets/projects/3d modeling/moon clock/moon1.jpg",
+    },
   ];
   return (
-    <div className="grid gap-10">
+    <main className="grid gap-10">
       <section>
         <h2 className="text-primary text-3xl uppercase"> About me</h2>
-        <p className="text-secondary text-sm font-thin">
-          My name is Sophia Hallal I’m a graphic designer with a Bachelor’s
-          degree from ALBA, Balamand University, and I’m passionate about
-          bringing ideas to life through thoughtful visuals. My work specializes
-          in branding, illustration, and 2D animation, where creativity and
-          storytelling come together to leave a lasting impression.
-        </p>
+        <p className="text-secondary text-sm font-thin">{aboutMe}</p>
       </section>
       <section>
         <h2 className="text-primary text-3xl uppercase mb-8"> My projects</h2>
         <div className="grid gap-5 sm:grid-cols-2 overflow-hidden ">
           {projectSections.map((section) => (
             <>
-              <CategoryCard key={section} title={section} image={bgimage} />
+              <CategoryCard
+                key={section.name}
+                title={section.name}
+                image={section.thumbnail}
+              />
             </>
           ))}
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

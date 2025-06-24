@@ -1,16 +1,10 @@
 import React from "react";
 
-const ProjectDetails = () => {
+const ProjectDetails = ({ title, description }) => {
   return (
     <>
-      <h3> Beatbox</h3>
-      <p>
-        BeatBox is a vibrant music streaming platform that celebrates
-        exploration, linking listeners with a wide range of sounds. The brand
-        identity embodies the app’s lively and fun character through striking
-        visuals, rhythmic graphics. It highlights BeatBox’s goal of making music
-        discovery easy, welcoming, and packed with personality.
-      </p>
+      <h3 className="uppercase text-xl text-primary"> {title}</h3>
+      <p>{description}</p>
     </>
   );
 };

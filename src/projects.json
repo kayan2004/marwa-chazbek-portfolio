@@ -26,14 +26,6 @@
             "type": "file"
           },
           {
-            "name": "moon10.jpg",
-            "type": "file"
-          },
-          {
-            "name": "moon11.jpg",
-            "type": "file"
-          },
-          {
             "name": "moon2.jpg",
             "type": "file"
           },
@@ -64,6 +56,14 @@
           {
             "name": "moon9.jpg",
             "type": "file"
+          },
+          {
+            "name": "moon10.jpg",
+            "type": "file"
+          },
+          {
+            "name": "moon11.jpg",
+            "type": "file"
           }
         ]
       },
@@ -73,38 +73,6 @@
         "children": [
           {
             "name": "marwa 8.jpg",
-            "type": "file"
-          },
-          {
-            "name": "marwa10.jpg",
-            "type": "file"
-          },
-          {
-            "name": "marwa11 el.jpg",
-            "type": "file"
-          },
-          {
-            "name": "marwa111.jpg",
-            "type": "file"
-          },
-          {
-            "name": "marwa12.jpg",
-            "type": "file"
-          },
-          {
-            "name": "marwa13.jpg",
-            "type": "file"
-          },
-          {
-            "name": "marwa14.jpg",
-            "type": "file"
-          },
-          {
-            "name": "marwa15.jpg",
-            "type": "file"
-          },
-          {
-            "name": "marwa222.jpg",
             "type": "file"
           },
           {
@@ -126,17 +94,95 @@
           {
             "name": "marwa9.jpg",
             "type": "file"
+          },
+          {
+            "name": "marwa10.jpg",
+            "type": "file"
+          },
+          {
+            "name": "marwa11 el.jpg",
+            "type": "file"
+          },
+          {
+            "name": "marwa12.jpg",
+            "type": "file"
+          },
+          {
+            "name": "marwa13.jpg",
+            "type": "file"
+          },
+          {
+            "name": "marwa14.jpg",
+            "type": "file"
+          },
+          {
+            "name": "marwa15.jpg",
+            "type": "file"
+          },
+          {
+            "name": "marwa111.jpg",
+            "type": "file"
+          },
+          {
+            "name": "marwa222.jpg",
+            "type": "file"
           }
         ]
       }
     ]
   },
   {
-    "name": "BFA project",
+    "name": "animation",
+    "type": "directory",
+    "children": [
+      {
+        "name": "marwa chazbek 2d animation.mp4",
+        "type": "file"
+      },
+      {
+        "name": "marwa_chazbek_ball_animation.mp4",
+        "type": "file"
+      }
+    ]
+  },
+  {
+    "name": "bfa project",
     "type": "directory",
     "children": [
       {
         "name": "Slide1.PNG",
+        "type": "file"
+      },
+      {
+        "name": "Slide2.PNG",
+        "type": "file"
+      },
+      {
+        "name": "Slide3.PNG",
+        "type": "file"
+      },
+      {
+        "name": "Slide4.PNG",
+        "type": "file"
+      },
+      {
+        "name": "Slide5.PNG",
+        "type": "file"
+      },
+      {
+        "name": "Slide6.PNG",
+        "type": "file"
+      },
+      {
+        "name": "Slide7.PNG",
+        "type": "file"
+      },
+      {
+        "name": "Slide8.PNG",
+        "type": "file"
+      },
+      {
+        "name": "Slide9.PNG",
         "type": "file"
       },
       {
@@ -180,10 +226,6 @@
         "type": "file"
       },
       {
-        "name": "Slide2.PNG",
-        "type": "file"
-      },
-      {
         "name": "Slide20.PNG",
         "type": "file"
       },
@@ -221,10 +263,6 @@
       },
       {
         "name": "Slide29.PNG",
-        "type": "file"
-      },
-      {
-        "name": "Slide3.PNG",
         "type": "file"
       },
       {
@@ -268,10 +306,6 @@
         "type": "file"
       },
       {
-        "name": "Slide4.PNG",
-        "type": "file"
-      },
-      {
         "name": "Slide40.PNG",
         "type": "file"
       },
@@ -309,10 +343,6 @@
       },
       {
         "name": "Slide49.PNG",
-        "type": "file"
-      },
-      {
-        "name": "Slide5.PNG",
         "type": "file"
       },
       {
@@ -356,10 +386,6 @@
         "type": "file"
       },
       {
-        "name": "Slide6.PNG",
-        "type": "file"
-      },
-      {
         "name": "Slide60.PNG",
         "type": "file"
       },
@@ -397,10 +423,6 @@
       },
       {
         "name": "Slide69.PNG",
-        "type": "file"
-      },
-      {
-        "name": "Slide7.PNG",
         "type": "file"
       },
       {
@@ -444,10 +466,6 @@
         "type": "file"
       },
       {
-        "name": "Slide8.PNG",
-        "type": "file"
-      },
-      {
         "name": "Slide80.PNG",
         "type": "file"
       },
@@ -462,24 +480,6 @@
       {
         "name": "Slide83.PNG",
         "type": "file"
-      },
-      {
-        "name": "Slide9.PNG",
-        "type": "file"
-      }
-    ]
-  },
-  {
-    "name": "animation",
-    "type": "directory",
-    "children": [
-      {
-        "name": "marwa chazbek 2d animation.mp4",
-        "type": "file"
-      },
-      {
-        "name": "marwa_chazbek_ball_animation.mp4",
-        "type": "file"
       }
     ]
   },
@@ -492,127 +492,83 @@
         "type": "directory",
         "children": [
           {
-            "name": "Artboard 1-100.jpg",
+            "name": "beatbox-01.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 10-100.jpg",
+            "name": "beatbox-02.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 11-100.jpg",
+            "name": "beatbox-03.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 12-100.jpg",
+            "name": "beatbox-04.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 13-100.jpg",
+            "name": "beatbox-05.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 14-100.jpg",
+            "name": "beatbox-06.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 15 copy 3-100.jpg",
+            "name": "beatbox-07.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 15 copy 4-100.jpg",
+            "name": "beatbox-08.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 15 copy 5-100.jpg",
+            "name": "beatbox-09.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 15-100.jpg",
+            "name": "beatbox-10.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 2-100.jpg",
+            "name": "beatbox-11.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 22 copy 2-100.jpg",
+            "name": "beatbox-12.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 22 copy 3-100.jpg",
+            "name": "beatbox-13.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 22 copy-100.jpg",
+            "name": "beatbox-14.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 22-100.jpg",
+            "name": "beatbox-15.jpg",
             "type": "file"
           },
           {
-            "name": "Artboard 24 copy-100.jpg",
+            "name": "beatbox-16.png",
             "type": "file"
           },
           {
-            "name": "Artboard 24-100.jpg",
+            "name": "beatbox-17.png",
             "type": "file"
           },
           {
-            "name": "Artboard 25 copy-100.jpg",
+            "name": "beatbox-18.png",
             "type": "file"
           },
           {
-            "name": "Artboard 25-100.jpg",
+            "name": "beatbox-19.png",
             "type": "file"
           },
           {
-            "name": "Artboard 4-100.jpg",
-            "type": "file"
-          },
-          {
-            "name": "Artboard 5-100.jpg",
-            "type": "file"
-          },
-          {
-            "name": "Artboard 6-100.jpg",
-            "type": "file"
-          },
-          {
-            "name": "Artboard 7 copy-100.jpg",
-            "type": "file"
-          },
-          {
-            "name": "Artboard 7-100.jpg",
-            "type": "file"
-          },
-          {
-            "name": "Artboard 8-100.jpg",
-            "type": "file"
-          },
-          {
-            "name": "Artboard 9-100.jpg",
-            "type": "file"
-          },
-          {
-            "name": "Fence_Billboard_Mockup_1.png",
-            "type": "file"
-          },
-          {
-            "name": "Fence_Billboard_Mockup_2.png",
-            "type": "file"
-          },
-          {
-            "name": "Free Vertical Billboard on th Brick Wall Mockup.png",
-            "type": "file"
-          },
-          {
-            "name": "Metro Billboard Mockup.png",
-            "type": "file"
-          },
-          {
-            "name": "Outdoor Bus Stop Advertisement Vertical Billboard Poster Mockup PSD 2018.png",
+            "name": "beatbox-20.png",
             "type": "file"
           }
         ]
@@ -631,10 +587,6 @@
           },
           {
             "name": "Artboard 5-100.jpg",
-            "type": "file"
-          },
-          {
-            "name": "Artboard 6 copy 10-100.jpg",
             "type": "file"
           },
           {
@@ -658,6 +610,10 @@
             "type": "file"
           },
           {
+            "name": "Artboard 6 copy 10-100.jpg",
+            "type": "file"
+          },
+          {
             "name": "Artboard 6 copy-100.jpg",
             "type": "file"
           },
@@ -671,6 +627,14 @@
           },
           {
             "name": "Free_Presentation_Mockup_5.png",
+            "type": "file"
+          },
+          {
+            "name": "mockup bs lt envelope.png",
+            "type": "file"
+          },
+          {
+            "name": "smartmockups_m33fg5hp.png",
             "type": "file"
           },
           {
@@ -690,59 +654,51 @@
             "type": "file"
           },
           {
-            "name": "branf guideline correct.png",
+            "name": "z branf guideline correct.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct10.png",
+            "name": "z branf guideline correct2.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct11.png",
+            "name": "z branf guideline correct3.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct12.png",
+            "name": "z branf guideline correct4.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct2.png",
+            "name": "z branf guideline correct5.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct3.png",
+            "name": "z branf guideline correct6.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct4.png",
+            "name": "z branf guideline correct7.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct5.png",
+            "name": "z branf guideline correct8.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct6.png",
+            "name": "z branf guideline correct9.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct7.png",
+            "name": "z branf guideline correct10.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct8.png",
+            "name": "z branf guideline correct11.png",
             "type": "file"
           },
           {
-            "name": "branf guideline correct9.png",
-            "type": "file"
-          },
-          {
-            "name": "mockup bs lt envelope.png",
-            "type": "file"
-          },
-          {
-            "name": "smartmockups_m33fg5hp.png",
+            "name": "z branf guideline correct12.png",
             "type": "file"
           }
         ]
@@ -760,11 +716,11 @@
             "type": "file"
           },
           {
-            "name": "Untitled design.jpg",
+            "name": "mockup1.png",
             "type": "file"
           },
           {
-            "name": "mockup1.png",
+            "name": "Untitled design.jpg",
             "type": "file"
           }
         ]
@@ -798,6 +754,10 @@
         "type": "directory",
         "children": [
           {
+            "name": "01 Free Open A4 Magazine Mockup On arabic.png",
+            "type": "file"
+          },
+          {
             "name": "01 Free Open A4 Magazine Mockup On Concr2ete.png",
             "type": "file"
           },
@@ -807,10 +767,6 @@
           },
           {
             "name": "01 Free Open A4 Magazine Mockup On Concrete.png",
-            "type": "file"
-          },
-          {
-            "name": "01 Free Open A4 Magazine Mockup On arabic.png",
             "type": "file"
           }
         ]
@@ -914,11 +870,11 @@
         "type": "file"
       },
       {
-        "name": "Packaging Mockup Freebies.png",
+        "name": "mockup.png",
         "type": "file"
       },
       {
-        "name": "mockup.png",
+        "name": "Packaging Mockup Freebies.png",
         "type": "file"
       }
     ]
@@ -956,10 +912,6 @@
             "type": "file"
           },
           {
-            "name": "DSC_01932.jpg",
-            "type": "file"
-          },
-          {
             "name": "DSC_0214.jpg",
             "type": "file"
           },
@@ -994,6 +946,10 @@
           {
             "name": "DSC_0986.jpg",
             "type": "file"
+          },
+          {
+            "name": "DSC_01932.jpg",
+            "type": "file"
           }
         ]
       },
@@ -1002,19 +958,19 @@
         "type": "directory",
         "children": [
           {
-            "name": "DSC_0078.png",
-            "type": "file"
-          },
-          {
-            "name": "IMG_0367_1.jpg",
-            "type": "file"
-          },
-          {
             "name": "bemyi.jpg",
             "type": "file"
           },
           {
             "name": "breakfast.jpg",
+            "type": "file"
+          },
+          {
+            "name": "DSC_0078.png",
+            "type": "file"
+          },
+          {
+            "name": "IMG_0367_1.jpg",
             "type": "file"
           },
           {
@@ -1044,6 +1000,22 @@
             "type": "file"
           },
           {
+            "name": "jbeil 2.jpg",
+            "type": "file"
+          },
+          {
+            "name": "jbeil 4.jpg",
+            "type": "file"
+          },
+          {
+            "name": "jbeil 5.jpg",
+            "type": "file"
+          },
+          {
+            "name": "jbeil 9.jpg",
+            "type": "file"
+          },
+          {
             "name": "jbeil 13.jpg",
             "type": "file"
           },
@@ -1053,10 +1025,6 @@
           },
           {
             "name": "jbeil 18.jpg",
-            "type": "file"
-          },
-          {
-            "name": "jbeil 2.jpg",
             "type": "file"
           },
           {
@@ -1080,23 +1048,11 @@
             "type": "file"
           },
           {
-            "name": "jbeil 36.jpg",
-            "type": "file"
-          },
-          {
             "name": "jbeil 36_1.jpg",
             "type": "file"
           },
           {
-            "name": "jbeil 4.jpg",
-            "type": "file"
-          },
-          {
-            "name": "jbeil 5.jpg",
-            "type": "file"
-          },
-          {
-            "name": "jbeil 9.jpg",
+            "name": "jbeil 36.jpg",
             "type": "file"
           }
         ]

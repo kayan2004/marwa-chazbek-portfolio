@@ -5,10 +5,7 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div
-      className="flex flex-col justify-center items-center
-    p-10 gap-16 max-w-3xl"
-    >
+    <div className="flex flex-col justify-center p-10 gap-16 max-w-3xl">
       <BrowserRouter>
         <Routes>
           <Route path="/" Component={Home}></Route>

@@ -24,3 +24,6 @@ dist-ssr
 *.sln
 *.sw?
 /public/
+
+# Local Netlify folder
+.netlify
