@@ -13,29 +13,27 @@ const Content = ({ aboutMe }) => {
     {
       name: "Editorial",
       thumbnail:
-        "/public/assets/projects/editorial/bilingual magazine/01 Free Open A4 Magazine Mockup On Concr2ete.png",
+        "/assets/projects/editorial/bilingual magazine/01 Free Open A4 Magazine Mockup On Concr2ete.png",
     },
     {
       name: "Illustration",
-      thumbnail: "/public/assets/projects/illustration/self portrait/3.png",
+      thumbnail: "/assets/projects/illustration/self portrait/3.png",
     },
     {
       name: "Packaging",
-      thumbnail: "/public/assets/projects/packaging/Image0005.png",
+      thumbnail: "/assets/projects/packaging/Image0005.png",
     },
     {
       name: "Photography",
-      thumbnail:
-        "/public/assets/projects/photography/street photography/jbeil 28.jpg",
+      thumbnail: "/assets/projects/photography/street photography/jbeil 28.jpg",
     },
     {
       name: "Animation",
-      thumbnail:
-        "/public/assets/projects/animation/marwa_chazbek_ball_animation.mp4",
+      thumbnail: "/assets/projects/animation/marwa_chazbek_ball_animation.mp4",
     },
     {
       name: "3D modeling",
-      thumbnail: "/public/assets/projects/3d modeling/moon clock/moon1.jpg",
+      thumbnail: "/assets/projects/3d modeling/moon clock/moon1.jpg",
     },
   ];
   return (

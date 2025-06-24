@@ -71,7 +71,7 @@ const Footer = ({ contacts }) => {
       </div>
       <a
         className="mt-10 flex gap-2 items-end-safe group cursor-pointer justify-end "
-        href="/public/resume/Marwa chazbek cv.pdf"
+        href="/resume/Marwa chazbek cv.pdf"
         download="Marwa-chazbek-cv"
       >
         <DownloadIcon />
