@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import projectsData from "../../src/projects.json";
 import ProjectDetails from "../components/ProjectDetails";
@@ -58,6 +58,10 @@ const Projects = () => {
   const { category } = useParams();
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Find the category node (first-level directory)
   const categoryNode = projectsData.find(
     (item) => item.name && item.name.toLowerCase() === category.toLowerCase()
@@ -109,7 +113,7 @@ const Projects = () => {
   return (
     <div className="relative">
       <button
-        className="fixed top-[6.5%] left-[2%] md:left-[15%] cursor-pointer"
+        className="fixed top-[6.5%] left-[2%] lg:left-[13%] cursor-pointer"
         onClick={() => navigate(-1)}
         aria-label="Go back"
       >

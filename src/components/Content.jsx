@@ -4,11 +4,12 @@ const Content = ({ aboutMe }) => {
   const projectSections = [
     {
       name: "BFA project",
-      thumbnail: "/assets/projects/bfa project/Slide31.PNG",
+      thumbnail: "/assets/projects/bfa project/Slide49.PNG",
     },
     {
       name: "Branding",
-      thumbnail: "/assets/projects/branding/beatbox/beatbox-06.jpg",
+      thumbnail:
+        "/public/assets/projects/branding/chouf trails/Free Outdoor Wide Billboard Mockup.png",
     },
     {
       name: "Editorial",

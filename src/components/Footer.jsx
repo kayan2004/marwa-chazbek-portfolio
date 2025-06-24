@@ -14,7 +14,9 @@ const Footer = ({ contacts }) => {
     <footer className="flex flex-col ">
       <div>
         <h2 className="text-primary text-3xl uppercase"> Contact</h2>
-        <p className="text-secondary text-sm font-thin">Let's work together!</p>
+        <p className="text-secondary text-sm font-thin mb-3">
+          Let's work together!
+        </p>
         <div className="grid">
           <div></div>
           <ul className="flex flex-col gap-1.5 md:grid md:grid-cols-2">
@@ -76,6 +78,13 @@ const Footer = ({ contacts }) => {
       >
         <DownloadIcon />
         <p className="font-extrabold">Download my resume</p>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/kayan-abdulbaki-41a630239/"
+        rel="noopener noreferrer"
+        className="text-xs  text-primary text-end mt-3 md:mt-6"
+      >
+        Created by <span className="text-secondary">Kayan Abdelbaki</span>
       </a>
     </footer>
   );
