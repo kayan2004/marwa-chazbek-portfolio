@@ -9,7 +9,7 @@ const Content = ({ aboutMe }) => {
     {
       name: "Branding",
       thumbnail:
-        "/public/assets/projects/branding/chouf trails/Free Outdoor Wide Billboard Mockup.png",
+        "/assets/projects/branding/chouf trails/Free Outdoor Wide Billboard Mockup.png",
     },
     {
       name: "Editorial",
