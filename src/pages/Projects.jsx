@@ -101,7 +101,12 @@ const Projects = () => {
 
     if (filePath.match(/\.(jpg|jpeg|png|gif)$/i)) {
       return (
-        <div className="relative w-full ">
+        <div
+          className="relative w-full rounded shadow cursor-pointer overflow-hidden" // Added overflow-hidden
+          style={{
+            aspectRatio: width && height ? `${width} / ${height}` : undefined,
+          }}
+        >
           {!loaded && blurhash && (
             <Blurhash
               hash={blurhash}
@@ -122,7 +127,7 @@ const Projects = () => {
             style={{
               aspectRatio: width && height ? `${width} / ${height}` : undefined,
             }}
-            className={`w-full object-cover rounded shadow cursor-pointer transition-opacity duration-500 ${
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
               loaded ? "opacity-100" : "opacity-0"
             }`}
             onClick={(e) => {
@@ -139,7 +144,10 @@ const Projects = () => {
           loop
           src={`/assets/projects${filePath}`}
           alt={altName}
-          className="w-full rounded shadow"
+          style={{
+            aspectRatio: width && height ? `${width} / ${height}` : undefined,
+          }}
+          className="w-full h-auto rounded shadow"
         />
       );
     } else {
@@ -208,7 +216,7 @@ const Projects = () => {
                   <div className="grid auto-rows-auto md:grid-cols-2 gap-4 mt-2">
                     {files.map((file) => (
                       <div
-                        className={`aspect-[var(--aspect-ratio)] rounded-lg`}
+                        className={`aspect-[var(--aspect-ratio)]  rounded-lg`}
                         style={{
                           "--aspect-ratio": `${file.width} / ${file.height}`,
                         }}
