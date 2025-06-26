@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { Blurhash } from "react-blurhash";
 import { useNavigate, useParams } from "react-router-dom";
 import projectsData from "../../src/projects.json";
 import ProjectDetails from "../components/ProjectDetails";
@@ -41,14 +42,21 @@ const projectParagraphs = {
   // Add more as needed
 };
 
-function collectFiles(node, parentPath = "") {
+// Recursively collect all file paths and their metadata from a directory node
+function collectFilesWithMeta(node, parentPath = "") {
   let files = [];
   const currentPath = parentPath ? parentPath + "/" + node.name : node.name;
   if (node.type === "file") {
-    files.push(currentPath);
+    files.push({
+      path: currentPath,
+      width: node.width,
+      height: node.height,
+      name: node.name,
+      blurhash: node.blurhash,
+    });
   } else if (node.type === "directory" && node.children) {
     node.children.forEach((child) => {
-      files = files.concat(collectFiles(child, currentPath));
+      files = files.concat(collectFilesWithMeta(child, currentPath));
     });
   }
   return files;
@@ -81,19 +89,48 @@ const Projects = () => {
     ? categoryNode.children.filter((child) => child.type === "file")
     : [];
 
-  // Helper to render an image/video/file
-  const renderMedia = (filePath, altName) => {
+  // Helper to render an image/video/file with Blurhash
+  const MediaWithBlurhash = ({
+    filePath,
+    altName,
+    width,
+    height,
+    blurhash,
+  }) => {
+    const [loaded, setLoaded] = useState(false);
+
     if (filePath.match(/\.(jpg|jpeg|png|gif)$/i)) {
       return (
-        <img
-          loading="lazy"
-          src={`/assets/projects${filePath}`}
-          alt={altName}
-          className="w-full rounded shadow cursor-pointer"
-          onClick={(e) => {
-            if (e.target.requestFullscreen) e.target.requestFullscreen();
-          }}
-        />
+        <div className="relative w-full ">
+          {!loaded && blurhash && (
+            <Blurhash
+              hash={blurhash}
+              width={"100%"}
+              height={"100%"}
+              resolutionX={32}
+              resolutionY={32}
+              punch={1}
+              className="absolute inset-0 w-full h-full rounded"
+            />
+          )}
+          <img
+            loading="lazy"
+            src={`/assets/projects${filePath}`}
+            alt={altName}
+            width={width}
+            height={height}
+            style={{
+              aspectRatio: width && height ? `${width} / ${height}` : undefined,
+            }}
+            className={`w-full object-cover rounded shadow cursor-pointer transition-opacity duration-500 ${
+              loaded ? "opacity-100" : "opacity-0"
+            }`}
+            onClick={(e) => {
+              if (e.target.requestFullscreen) e.target.requestFullscreen();
+            }}
+            onLoad={() => setLoaded(true)}
+          />
+        </div>
       );
     } else if (filePath.match(/\.(mp4)$/i)) {
       return (
@@ -138,7 +175,21 @@ const Projects = () => {
               {directFiles.map((file) => {
                 const filePath = "/" + category + "/" + file.name;
                 return (
-                  <div key={filePath}>{renderMedia(filePath, file.name)}</div>
+                  <div
+                    className={`aspect-[var(--aspect-ratio)] rounded-lg`}
+                    style={{
+                      "--aspect-ratio": `${file.width} / ${file.height}`,
+                    }}
+                    key={filePath}
+                  >
+                    <MediaWithBlurhash
+                      filePath={filePath}
+                      altName={file.name}
+                      width={file.width}
+                      height={file.height}
+                      blurhash={file.blurhash}
+                    />
+                  </div>
                 );
               })}
             </div>
@@ -147,7 +198,7 @@ const Projects = () => {
         {/* Render subdirectories as projects */}
         {secondLevelDirs.length > 0
           ? secondLevelDirs.map((dir) => {
-              const files = collectFiles(dir, "/" + category);
+              const files = collectFilesWithMeta(dir, "/" + category);
               return (
                 <div key={dir.name} className="mb-8">
                   <ProjectDetails
@@ -155,9 +206,21 @@ const Projects = () => {
                     description={projectParagraphs[dir.name] || ""}
                   />
                   <div className="grid auto-rows-auto md:grid-cols-2 gap-4 mt-2">
-                    {files.map((filePath) => (
-                      <div key={filePath}>
-                        {renderMedia(filePath, filePath.split("/").pop())}
+                    {files.map((file) => (
+                      <div
+                        className={`aspect-[var(--aspect-ratio)] rounded-lg`}
+                        style={{
+                          "--aspect-ratio": `${file.width} / ${file.height}`,
+                        }}
+                        key={file.path}
+                      >
+                        <MediaWithBlurhash
+                          filePath={file.path}
+                          altName={file.name}
+                          width={file.width}
+                          height={file.height}
+                          blurhash={file.blurhash}
+                        />
                       </div>
                     ))}
                   </div>
