@@ -37,7 +37,7 @@ const CategoryCard = ({ key, title, image, blurhash }) => {
           resolutionX={32}
           resolutionY={32}
           punch={1}
-          className="absolute inset-0 w-full h-full rounded-2xl"
+          className="object-center object-cover w-full aspect-3/2 rounded-2xl"
         />
       )}
       {isVideo ? (
