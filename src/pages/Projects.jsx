@@ -99,7 +99,7 @@ const Projects = () => {
   }) => {
     const [loaded, setLoaded] = useState(false);
 
-    if (filePath.match(/\.(jpg|jpeg|png|gif)$/i)) {
+    if (filePath.match(/\.(jpg|jpeg|png|webp)$/i)) {
       return (
         <div
           className="relative w-full rounded shadow cursor-pointer overflow-hidden" // Added overflow-hidden

@@ -4,34 +4,34 @@ const Content = ({ aboutMe }) => {
   const projectSections = [
     {
       name: "BFA project",
-      thumbnail: "/assets/projects/bfa project/Slide49.PNG",
+      thumbnail: "/assets/projects/bfa project/Slide49.webp",
       blurhash: "L#OW$=nit8ayofayj[fR~pf+WAoe",
     },
     {
       name: "Branding",
       thumbnail:
-        "/assets/projects/branding/chouf trails/Free Outdoor Wide Billboard Mockup.png",
+        "/assets/projects/branding/chouf trails/Free Outdoor Wide Billboard Mockup.webp",
       blurhash: "LnE:xwt6R:WrX=j[WCWX9FWFxVoc",
     },
     {
       name: "Editorial",
       thumbnail:
-        "/assets/projects/editorial/bilingual magazine/01 Free Open A4 Magazine Mockup On Concr2ete.png",
+        "/assets/projects/editorial/bilingual magazine/01 Free Open A4 Magazine Mockup On Concr2ete.webp",
       blurhash: "LONdK~x]%M%2~q%MoMRjbbM{M{R*",
     },
     {
       name: "Illustration",
-      thumbnail: "/assets/projects/illustration/self portrait/3.png",
+      thumbnail: "/assets/projects/illustration/self portrait/3.webp",
       blurhash: "LxOf.Lt4~pM{?aj]IqniX9bEVrkC",
     },
     {
       name: "Packaging",
-      thumbnail: "/assets/projects/packaging/Image0005.png",
+      thumbnail: "/assets/projects/packaging/Image0005.webp",
       blurhash: "LAH1*ZRU00%Z.RtRMeIB03xC~AI]",
     },
     {
       name: "Photography",
-      thumbnail: "/assets/projects/photography/street photography/jbeil 28.jpg",
+      thumbnail: "/assets/projects/photography/street photography/jbeil 28.webp",
       blurhash: "LGGHk}~DG^K*pv?^-V~D?I$%X.I[",
     },
     {
@@ -41,7 +41,7 @@ const Content = ({ aboutMe }) => {
     },
     {
       name: "3D modeling",
-      thumbnail: "/assets/projects/3d modeling/moon clock/moon1.jpg",
+      thumbnail: "/assets/projects/3d modeling/moon clock/moon1.webp",
       blurhash: "L84xfQx|9$E3R.WXoJoIITRi%0xs",
     },
   ];
