@@ -6,8 +6,8 @@ This is a personal portfolio website created for my friend, Marwa Chazbek, who i
 
 Click any image below to open the live demo:
 
-[![Homepage Preview](/src/assets/previews/home-preview.png)](https://marwa-chazbek-portfolio.vercel.app)
-[![Gallery Preview](/src/assets/previews/project-preview.png)](https://marwa-chazbek-portfolio.vercel.app)
+[![Homepage Preview](/src/assets/previews/home-preview.png)](https://marwa-chazbek-portfolio.netlify.app)
+[![Gallery Preview](/src/assets/previews/project-preview.png)](https://marwa-chazbek-portfolio.netlify.app)
 
 ## About the Project
 
