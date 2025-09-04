@@ -9,10 +9,6 @@ Click any image below to open the live demo:
 [![Homepage Preview](/src/assets/previews/home-preview.png)](https://marwa-chazbek-portfolio.netlify.app)
 [![Gallery Preview](/src/assets/previews/project-preview.png)](https://marwa-chazbek-portfolio.netlify.app)
 
-## About the Project
-
-I built this project to help Marwa display her graphic design portfolio online. The goal was to create a clean, easy-to-navigate, and visually engaging site that reflects her artistic style and professionalism.
-
 ## Features
 
 - Responsive design for desktop and mobile
@@ -28,4 +24,4 @@ I built this project to help Marwa display her graphic design portfolio online. 
 
 ## License
 
-Feel free to use this design for your own portfolio.
+Feel free to use this design for your own portfolio but dont forget to give credits!
