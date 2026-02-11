@@ -1,12 +1,27 @@
-# React + Vite
+# Marwa Chazbek Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a personal portfolio website created for my friend, Marwa Chazbek, who is a talented graphic designer. The website showcases her design works, creative projects, and professional background in a modern and visually appealing way.
 
-Currently, two official plugins are available:
+## Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Click any image below to open the live demo:
 
-## Expanding the ESLint configuration
+[![Homepage Preview](/src/assets/previews/home-preview.png)](https://marwa-chazbek-portfolio.netlify.app)
+[![Gallery Preview](/src/assets/previews/project-preview.png)](https://marwa-chazbek-portfolio.netlify.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Responsive design for desktop and mobile
+- Gallery of Marwa's selected works
+- About section introducing Marwa and her skills
+- Contact form to get in touch
+- Smooth transitions and modern UI elements
+
+## Credits
+
+- **Design & Content:** Marwa Chazbek
+- **Development:** [kayan2004](https://github.com/kayan2004)
+
+## License
+
+Feel free to use this design for your own portfolio but dont forget to give credits!
