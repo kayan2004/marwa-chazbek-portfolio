@@ -61,7 +61,7 @@ const CategoryCard = ({ key, title, image, blurhash }) => {
       )}
 
       <NavLink
-        to={`/projects/${title.toLowerCase()}`}
+        to={`/projects/${encodeURIComponent(title)}`}
         className="absolute border-4 p-2 border-primary text-center text-secondary text-2xl cursor-pointer rounded-xl"
       >
         {title}

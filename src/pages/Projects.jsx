@@ -39,6 +39,10 @@ const projectParagraphs = {
     "Created a detailed 3D model of a clock hanging from a crescent moon using Autodesk Maya.",
   "room interior":
     "The project focused on realistic spatial arrangement and furniture modeling.",
+  "red sea global employee annual celebration":
+    "Design work for the Red Sea Global Employee Annual Celebration event, featuring signage, mockups, and promotional materials.",
+  "saudi graduation ceremony 2026":
+    "Design work for the annual graduation celebration of the Saudi Electronic University in 2026.",
   // Add more as needed
 };
 
@@ -71,11 +75,14 @@ const Projects = () => {
   }, []);
 
   // Find the category node (first-level directory)
+  const decodedCategory = decodeURIComponent(category);
   const categoryNode = projectsData.find(
-    (item) => item.name && item.name.toLowerCase() === category.toLowerCase()
+    (item) => item.name && item.name.toLowerCase().normalize() === decodedCategory.toLowerCase().normalize()
   );
 
   if (!categoryNode) {
+    console.log("Category not found. Looking for:", decodedCategory);
+    console.log("Available categories:", projectsData.map(item => item.name));
     return <p>No projects found for this category.</p>;
   }
 
@@ -120,7 +127,7 @@ const Projects = () => {
           )}
           <img
             loading="lazy"
-            src={`/assets/projects${filePath}`}
+            src={`/assets/projects${encodeURI(filePath)}`}
             alt={altName}
             width={width}
             height={height}
@@ -142,7 +149,7 @@ const Projects = () => {
         <video
           controls
           loop
-          src={`/assets/projects${filePath}`}
+          src={`/assets/projects${encodeURI(filePath)}`}
           alt={altName}
           style={{
             aspectRatio: width && height ? `${width} / ${height}` : undefined,
@@ -177,11 +184,11 @@ const Projects = () => {
           <div className="mb-8">
             <ProjectDetails
               title={categoryNode.name}
-              description={projectParagraphs[categoryNode.name] || ""}
+              description={projectParagraphs[categoryNode.name.toLowerCase()] || ""}
             />
             <div className="grid md:grid-cols-2 gap-4 mt-2">
               {directFiles.map((file) => {
-                const filePath = "/" + category + "/" + file.name;
+                const filePath = "/" + categoryNode.name + "/" + file.name;
                 return (
                   <div
                     className={`aspect-[var(--aspect-ratio)] rounded-lg`}
@@ -206,12 +213,12 @@ const Projects = () => {
         {/* Render subdirectories as projects */}
         {secondLevelDirs.length > 0
           ? secondLevelDirs.map((dir) => {
-              const files = collectFilesWithMeta(dir, "/" + category);
+              const files = collectFilesWithMeta(dir, "/" + categoryNode.name);
               return (
                 <div key={dir.name} className="mb-8">
                   <ProjectDetails
                     title={dir.name}
-                    description={projectParagraphs[dir.name] || ""}
+                    description={projectParagraphs[dir.name.toLowerCase()] || ""}
                   />
                   <div className="grid auto-rows-auto md:grid-cols-2 gap-4 mt-2">
                     {files.map((file) => (

@@ -44,6 +44,16 @@ const Content = ({ aboutMe }) => {
       thumbnail: "/assets/projects/3d modeling/moon clock/moon1.webp",
       blurhash: "L84xfQx|9$E3R.WXoJoIITRi%0xs",
     },
+    {
+      name: "Red Sea Global Employee Annual Celebration",
+      thumbnail: "/assets/projects/Red%20Sea%20Global%20Employee%20Annual%20Celebration/Flag%20Mockup%20red%20sea%20globale.jpg",
+      blurhash: "LbA_h=sk.AxaDiRlM|ayx^jYjDj]",
+    },
+    {
+      name: "saudi graduation ceremony 2026",
+      thumbnail: "/assets/projects/saudi%20graduation%20ceremony%202026/cover%205%20%281%29.jpg",
+      blurhash: "LM7XL4UNw0TfUHYPawiwRPoKfkXS",
+    }
   ];
   return (
     <main className="grid gap-10">
